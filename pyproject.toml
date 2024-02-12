@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "nestpy-poetry-starter"
+version = "0.1.4"
+description = ""
+authors = ["None"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.scripts]
+start = 'src.main:bootstrap'
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nestpy-framework = "0.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
